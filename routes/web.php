@@ -8,16 +8,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/about', function () {
+Route::get('/ryedev/about', function () {
     $name = 'Richard Towa';
     $age = 17;
     return view('about', ['name' => $name, 'age' => $age]);
-});
+})->name('about');
 
-Route::get('/contact', function () {
+Route::get('/rye/contact', function () {
     return view('contact');
-});
+})->name('contact');
 
-Route::get('/student', [StudentController::class, 'index']);
+Route::get('/student', [StudentController::class, 'index'])->name('siswa.index');
 
-Route::get('/student/{id}', [StudentController::class, 'show']);
+Route::get('/student/{id}', [StudentController::class, 'show'])->name('siswa.show');
