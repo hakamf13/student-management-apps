@@ -21,7 +21,7 @@
                     <td class="px-3 py-2 whitespace-nowrap">{{$item['major']}}</td>
                     <td class="px-3 py-2 whitespace-nowrap">{{$item['score']}}</td>
                     <td class="px-3 py-2 whitespace-nowrap">
-                        <a href="{{ route('siswa.show', $item['id']) }}" class="text-teal-500 font-bold hover:opacity-50">
+                        <a href="{{ route('siswa.show', {{ $item['id']}} }})" class="text-teal-500 font-bold hover:opacity-50">
                             View Details
                         </a>
                     </td>

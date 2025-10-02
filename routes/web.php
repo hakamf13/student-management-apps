@@ -14,7 +14,7 @@ Route::get('/ryedev/about', function () {
     return view('about', ['name' => $name, 'age' => $age]);
 })->name('about');
 
-Route::get('/rye/contact', function () {
+Route::get('/ryedev/contact', function () {
     return view('contact');
 })->name('contact');
 
